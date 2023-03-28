@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "530362166724",
+    "project_id": "app-martabak",
+    "storage_bucket": "app-martabak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530362166724:android:b7d3788aedd68832fdc891",
+        "android_client_info": {
+          "package_name": "com.example.appmartabak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530362166724-50kt0emn5efoqiu5vs56h6b54o591rf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDduJ-rbMVv-E4_WWkSsNeGBAvBjpsvBC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530362166724-50kt0emn5efoqiu5vs56h6b54o591rf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
