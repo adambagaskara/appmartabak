@@ -51,6 +51,7 @@ class _MainScreenState extends State<MainScreen> {
     print(user.uid);
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(onPressed: mc.signUserOut, icon: Icon(Icons.logout))
         ],

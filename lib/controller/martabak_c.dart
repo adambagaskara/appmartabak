@@ -1,5 +1,6 @@
 // import 'dart:html';
 
+import 'package:appmartabak/screen/auth_page.dart';
 import 'package:appmartabak/screen/login_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -229,7 +230,7 @@ class MartabakC extends GetxController {
 
   signUserOut() {
     FirebaseAuth.instance.signOut();
-    Get.to(LoginPage());
+    // Get.to(AuthPage());
   }
 
   Future<List<dynamic>> getDocId() async {
