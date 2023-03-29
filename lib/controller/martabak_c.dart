@@ -228,8 +228,9 @@ class MartabakC extends GetxController {
     print(response.body);
   }
 
-  signUserOut() {
+  void signUserOut() {
     FirebaseAuth.instance.signOut();
+    print('object');
     // Get.to(AuthPage());
   }
 

@@ -25,7 +25,7 @@ class InputOrder extends StatelessWidget {
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () {
                   mc.getDocId();
-                  Get.to(MainScreen());
+                  Get.to(() => MainScreen());
                 },
               );
             },
@@ -248,7 +248,7 @@ class InputOrder extends StatelessWidget {
                         if (mc.jumlah1.value > 0 ||
                             mc.jumlah2.value > 0 ||
                             mc.jumlah3.value > 0) {
-                          Get.to(CheckoutOrderScreen());
+                          Get.to(() => CheckoutOrderScreen());
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               backgroundColor: Colors.red,

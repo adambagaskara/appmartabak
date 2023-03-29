@@ -12,20 +12,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-class MainScreen extends StatefulWidget {
+class MainScreen extends StatelessWidget {
   MainScreen({super.key});
-
-  @override
-  State<MainScreen> createState() => _MainScreenState();
-}
-
-class _MainScreenState extends State<MainScreen> {
   final mc = Get.put(MartabakC());
   final user = FirebaseAuth.instance.currentUser!;
 
   // document IDs
-  List docIDs = [];
-  List listOrders = [];
+  // List docIDs = [];
+  // List listOrders = [];
 
   //get docIDs
 
@@ -53,7 +47,8 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(onPressed: mc.signUserOut, icon: Icon(Icons.logout))
+          IconButton(
+              onPressed: () => mc.signUserOut(), icon: Icon(Icons.logout))
         ],
       ),
       body: Padding(
@@ -76,7 +71,7 @@ class _MainScreenState extends State<MainScreen> {
               const SizedBox(height: 15),
               ElevatedButton(
                   onPressed: () {
-                    Get.to(InputOrder());
+                    Get.to(() => InputOrder());
                     // Navigator.of(context).push(
                     //     MaterialPageRoute(builder: (context) => InputOrder()));
                   },
